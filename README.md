@@ -18,10 +18,11 @@ The test consists of a partially completed solution containing static html mocku
 
 ### Project Setup
 
-1. Clone the test project to your local machine:
-    >```git clone https://github.com/itriage/code_test_web_front_end.git```
-2. Create a branch for you:
-    >```git checkout -b [lastname]_[firstname]_codetest```
+1. Fork the following project on GitHub: https://github.com/itriage/code_test_web_front_end.
+   (Go to the project, and click the "fork" button.)
+2. Clone the test project to your local machine:
+    >```git clone [your forked repository url]```
+   (The repository URL is found in the top right-hand corner of the home page of your repository)
 3. Install node dependencies:
     >```npm install```
 4. Run the Node Express web server:
@@ -65,10 +66,10 @@ The next step is to build the features of the application based on the user stor
             - Email field should be a valid email format
             - Validation messages (span's with class "validation-msg") should appear next to the fields only if validation rules did not pass. 
 
-### Push Your Branch to GitHub
+### Push Your Changes to GitHub
 1. Commit your changes to your local repository (if you haven't already):
     >```git add .```
     
     >```git commit -m"[your comments]"```
 2. Push your branch up to GitHub:
-    >```git push -u origin [lastname]_[firstname]_codetest```
+    >```git push origin master```
