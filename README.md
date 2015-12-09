@@ -65,12 +65,10 @@ The next step is to build the features of the application based on the user stor
             - Email field should be a valid email format
             - Validation messages (span's with class "validation-msg") should appear next to the fields only if validation rules did not pass. 
 
-### Submit Your Pull Request
+### Push Your Branch to GitHub
 1. Commit your changes to your local repository (if you haven't already):
     >```git add .```
     
     >```git commit -m"[your comments]"```
 2. Push your branch up to GitHub:
     >```git push -u origin [lastname]_[firstname]_codetest```
-3. Create a Pull Request in GitHub by following these instructions https://help.github.com/articles/using-pull-requests.
-
