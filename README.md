@@ -73,3 +73,4 @@ The next step is to build the features of the application based on the user stor
     >```git commit -m"[your comments]"```
 2. Push your branch up to GitHub:
     >```git push origin master```
+3. Let your iTriage point of contact know you are completed and include the link to your forked repository.
