@@ -21,12 +21,12 @@ The test consists of a partially completed solution containing static html mocku
 1. Fork the following project on GitHub: https://github.com/itriage/code_test_web_front_end.
    (Go to the project, and click the "fork" button.)
 2. Clone the test project to your local machine:
-    >```git clone [your forked repository url]```
+   ```git clone [your forked repository url]```
    (The repository URL is found in the top right-hand corner of the home page of your repository)
 3. Install node dependencies:
-    >```npm install```
+   ```npm install```
 4. Run the Node Express web server:
-    >```node server```
+   ```node server```
 5. Test the site in a browser by going to ```http://localhost:3000/mockups```
 
 At this point you will see some static html pages that represent the User Experience (UX) and general flow for the application. 
@@ -69,7 +69,7 @@ The next step is to build the features of the application based on the user stor
 ### Push Your Changes to GitHub
 1. Commit your changes to your local repository (if you haven't already):
     >```git add .```
-    
+
     >```git commit -m"[your comments]"```
 2. Push your branch up to GitHub:
     >```git push origin master```
