@@ -1,0 +1,34 @@
+<h2>Suggestions</h2>
+<h4 ng-show="displaySuccessMessage" class="text-success"><br>Thanks! Your suggestion has been submitted.</h4>
+
+<div ng-show="!displaySuccessMessage" id="content">
+    <form class='form-horizontal' name="suggestionForm" ng-submit="submitSuggestion(suggestion)" novalidate>
+        <div class='form-group' ng-class="{ 'has-error' : suggestionForm.name.$invalid && suggestionForm.name.$touched }">
+            <label class="col-sm-3 control-label">Name*</label>
+            <div class="col-sm-6">
+                <input class="form-control" name="name" ng-model="suggestion.name" type="text" required/>
+                <span ng-show="suggestionForm.name.$invalid && suggestionForm.name.$touched" class="validation-msg help-block">Name is required.</span>
+            </div>
+        </div>
+        <div class='form-group' ng-class="{ 'has-error' : suggestionForm.email.$invalid && suggestionForm.email.$touched }">
+            <label class="col-sm-3 control-label">Email</label>
+            <div class="col-sm-6">
+                <input class="form-control" ng-model="suggestion.email" type="email" name="email"/>
+                <span ng-show="suggestionForm.email.$invalid && suggestionForm.email.$touched" class="validation-msg help-block">Must be a valid email.</span>
+            </div>
+        </div>
+        <div class='form-group' ng-class="{ 'has-error' : suggestionForm.message.$invalid && suggestionForm.message.$touched }">
+            <label class="col-sm-3 control-label">Suggestion*</label>
+            <div class="col-sm-6">
+                <textarea class="form-control" ng-model="suggestion.message" name="message" required></textarea>
+                <span ng-show="suggestionForm.message.$invalid && suggestionForm.message.$touched" class="validation-msg help-block">Suggestion is required.</span>
+            </div>
+        </div>
+        <div class='form-group'>
+            <label class="col-sm-3 control-label"></label>
+            <div class="col-sm-6">
+                <button class="btn btn-primary btn-lg pull-right" ng-disabled="suggestionForm.$invalid" ng-click="submitSuggestion(suggestion);"> Send Suggestion </button>
+            </div>
+        </div>
+    </form>
+</div>

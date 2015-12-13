@@ -71,7 +71,7 @@
     });
 
     app.get('/', function (req, res) {
-        res.sendFile('index.html');
+        res.redirect('/index.html');
     });
 
 }());

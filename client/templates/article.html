@@ -1,0 +1,12 @@
+<div id="content">
+    <article class="article">
+        <h2>{{article.title}}</h2>
+
+        <p>by <em>{{article.author}}</em>, on <em>{{article.publish_date}}</em> <label ng-show="hasRead"><input type="checkbox" checked disabled> (read already)</label> </p>
+
+        <p>Category <a href="#/{{article.category.id}}/articles">{{article.category.title}}</a></p>
+
+        <div ng-bind-html="article.content" class="article-body">
+        </div>
+    </article>
+</div>
